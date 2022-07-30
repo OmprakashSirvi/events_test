@@ -21,8 +21,8 @@ exports.getEventById = CatchAsync(async (req, res, next) => {
 });
 
 exports.createEvent = CatchAsync(async (req, res, next) => {
-  const id = req.params.id;
-  const body = req.body;
+  let body = req.body;
+  body.schedule = new Date(body.schedule);
 
   const data = await client.db("jobTest").collection("events").insertOne(body);
 

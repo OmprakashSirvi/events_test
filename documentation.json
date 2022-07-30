@@ -4,6 +4,9 @@
         "image": "",
         "time": "",
         "description": "",
-        "icon": ""
+        "viewNudget": {
+            "icon": "",
+            "invitation": ""
+        }
     }
 ]
